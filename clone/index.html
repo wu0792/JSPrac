@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        how to restore an editing a model using JSON clone.
+    </title>
+    <style>
+        html {
+            font-size: 12px;
+            line-height: 28px;
+        }
+        
+        span {
+            width: 50px;
+            display: inline-block;
+        }
+        
+        p {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="./jquery-1.11.1.js"></script>
+    <script src="./index.js"></script>
+</head>
+<h3>
+    edit the product info:
+</h3>
+<div>
+    <form>
+        <ul>
+            <li>
+                <span>ID:
+            </span>
+                <input id="ID" name="ID" readonly disabled />
+            </li>
+            <li>
+                <span>Name:
+            </span>
+                <input id="Name" name="Name" />
+            </li>
+            <li>
+                <span>Remark:
+            </span>
+                <input id="Remark" name="Remark" />
+            </li>
+            <li>
+                <span>Size:
+            </span>
+                <select id="Size" name="Size">
+                <option value ="XXL">XXL</option>
+                <option value ="XL">XL</option>
+                <option value="L">L</option>
+           </select>
+            </li>
+        </ul>
+        <input id="Restore" name="Restore" type="button" value="Restore">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <p>
+        this demo is very simple but usefule while store a js object and restore it later.
+    </p>
+</div>
+
+</html>
